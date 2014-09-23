@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "OWSManger.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +17,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    HomeViewController * mvc = [[HomeViewController alloc]init];
+    UINavigationController * vc = [[UINavigationController alloc]initWithRootViewController:mvc];
+    self.window.rootViewController = vc;
+    
+    [OWSManger SetAdunitID:@"sNCNCCCCCCCLHQWCCC"];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

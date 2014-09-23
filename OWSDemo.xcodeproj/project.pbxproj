@@ -9,37 +9,30 @@
 /* Begin PBXBuildFile section */
 		0C5E073019D002DB00D80B64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5E072F19D002DB00D80B64 /* main.m */; };
 		0C5E073319D002DB00D80B64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5E073219D002DB00D80B64 /* AppDelegate.m */; };
-		0C5E073619D002DB00D80B64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5E073519D002DB00D80B64 /* ViewController.m */; };
 		0C5E073919D002DB00D80B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5E073719D002DB00D80B64 /* Main.storyboard */; };
 		0C5E073B19D002DB00D80B64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5E073A19D002DB00D80B64 /* Images.xcassets */; };
 		0C5E073E19D002DB00D80B64 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C5E073C19D002DB00D80B64 /* LaunchScreen.xib */; };
-		0C5E074A19D002DB00D80B64 /* dddddddTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5E074919D002DB00D80B64 /* dddddddTests.m */; };
+		0C5E0AA319D13B2000D80B64 /* libBindxOWS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5E0AA119D13B2000D80B64 /* libBindxOWS.a */; };
+		0C5E0AA419D13B2000D80B64 /* OWS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C5E0AA219D13B2000D80B64 /* OWS.bundle */; };
+		0CEA509519D14A6A00705390 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA509319D14A6A00705390 /* HomeViewController.m */; };
+		0CEA509619D14A6A00705390 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CEA509419D14A6A00705390 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0C5E074419D002DB00D80B64 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0C5E072219D002DB00D80B64 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C5E072919D002DB00D80B64;
-			remoteInfo = ddddddd;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		0C5E072A19D002DB00D80B64 /* ddddddd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ddddddd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C5E072A19D002DB00D80B64 /* OWSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5E072E19D002DB00D80B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C5E072F19D002DB00D80B64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0C5E073119D002DB00D80B64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0C5E073219D002DB00D80B64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0C5E073419D002DB00D80B64 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0C5E073519D002DB00D80B64 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0C5E073119D002DB00D80B64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = OWSDemo/AppDelegate.h; sourceTree = "<group>"; };
+		0C5E073219D002DB00D80B64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = OWSDemo/AppDelegate.m; sourceTree = "<group>"; };
 		0C5E073819D002DB00D80B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C5E073A19D002DB00D80B64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0C5E073D19D002DB00D80B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		0C5E074319D002DB00D80B64 /* dddddddTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dddddddTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C5E074819D002DB00D80B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C5E074919D002DB00D80B64 /* dddddddTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dddddddTests.m; sourceTree = "<group>"; };
+		0C5E0AA019D13B2000D80B64 /* OWSManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWSManger.h; sourceTree = "<group>"; };
+		0C5E0AA119D13B2000D80B64 /* libBindxOWS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBindxOWS.a; sourceTree = "<group>"; };
+		0C5E0AA219D13B2000D80B64 /* OWS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OWS.bundle; sourceTree = "<group>"; };
+		0CEA509219D14A6A00705390 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		0CEA509319D14A6A00705390 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		0CEA509419D14A6A00705390 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,13 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0C5E074019D002DB00D80B64 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0C5E0AA319D13B2000D80B64 /* libBindxOWS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,34 +50,34 @@
 		0C5E072119D002DB00D80B64 = {
 			isa = PBXGroup;
 			children = (
-				0C5E072C19D002DB00D80B64 /* ddddddd */,
-				0C5E074619D002DB00D80B64 /* dddddddTests */,
+				0C5E073119D002DB00D80B64 /* AppDelegate.h */,
+				0C5E073219D002DB00D80B64 /* AppDelegate.m */,
+				0C5E073719D002DB00D80B64 /* Main.storyboard */,
+				0C5E072C19D002DB00D80B64 /* OWSDemo */,
 				0C5E072B19D002DB00D80B64 /* Products */,
+				0C5E0A9C19D13B2000D80B64 /* Debug-iphonesimulator */,
 			);
 			sourceTree = "<group>";
 		};
 		0C5E072B19D002DB00D80B64 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C5E072A19D002DB00D80B64 /* ddddddd.app */,
-				0C5E074319D002DB00D80B64 /* dddddddTests.xctest */,
+				0C5E072A19D002DB00D80B64 /* OWSDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0C5E072C19D002DB00D80B64 /* ddddddd */ = {
+		0C5E072C19D002DB00D80B64 /* OWSDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0C5E073119D002DB00D80B64 /* AppDelegate.h */,
-				0C5E073219D002DB00D80B64 /* AppDelegate.m */,
-				0C5E073419D002DB00D80B64 /* ViewController.h */,
-				0C5E073519D002DB00D80B64 /* ViewController.m */,
-				0C5E073719D002DB00D80B64 /* Main.storyboard */,
+				0CEA509219D14A6A00705390 /* HomeViewController.h */,
+				0CEA509319D14A6A00705390 /* HomeViewController.m */,
+				0CEA509419D14A6A00705390 /* HomeViewController.xib */,
 				0C5E073A19D002DB00D80B64 /* Images.xcassets */,
 				0C5E073C19D002DB00D80B64 /* LaunchScreen.xib */,
 				0C5E072D19D002DB00D80B64 /* Supporting Files */,
 			);
-			path = ddddddd;
+			path = OWSDemo;
 			sourceTree = "<group>";
 		};
 		0C5E072D19D002DB00D80B64 /* Supporting Files */ = {
@@ -102,29 +89,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0C5E074619D002DB00D80B64 /* dddddddTests */ = {
+		0C5E0A9C19D13B2000D80B64 /* Debug-iphonesimulator */ = {
 			isa = PBXGroup;
 			children = (
-				0C5E074919D002DB00D80B64 /* dddddddTests.m */,
-				0C5E074719D002DB00D80B64 /* Supporting Files */,
+				0C5E0A9D19D13B2000D80B64 /* include */,
+				0C5E0AA119D13B2000D80B64 /* libBindxOWS.a */,
+				0C5E0AA219D13B2000D80B64 /* OWS.bundle */,
 			);
-			path = dddddddTests;
+			path = "Debug-iphonesimulator";
 			sourceTree = "<group>";
 		};
-		0C5E074719D002DB00D80B64 /* Supporting Files */ = {
+		0C5E0A9D19D13B2000D80B64 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				0C5E074819D002DB00D80B64 /* Info.plist */,
+				0C5E0A9E19D13B2000D80B64 /* BindxOWS */,
 			);
-			name = "Supporting Files";
+			path = include;
+			sourceTree = "<group>";
+		};
+		0C5E0A9E19D13B2000D80B64 /* BindxOWS */ = {
+			isa = PBXGroup;
+			children = (
+				0C5E0AA019D13B2000D80B64 /* OWSManger.h */,
+			);
+			path = BindxOWS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0C5E072919D002DB00D80B64 /* ddddddd */ = {
+		0C5E072919D002DB00D80B64 /* OWSDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C5E074D19D002DB00D80B64 /* Build configuration list for PBXNativeTarget "ddddddd" */;
+			buildConfigurationList = 0C5E074D19D002DB00D80B64 /* Build configuration list for PBXNativeTarget "OWSDemo" */;
 			buildPhases = (
 				0C5E072619D002DB00D80B64 /* Sources */,
 				0C5E072719D002DB00D80B64 /* Frameworks */,
@@ -134,28 +130,10 @@
 			);
 			dependencies = (
 			);
-			name = ddddddd;
+			name = OWSDemo;
 			productName = ddddddd;
-			productReference = 0C5E072A19D002DB00D80B64 /* ddddddd.app */;
+			productReference = 0C5E072A19D002DB00D80B64 /* OWSDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		0C5E074219D002DB00D80B64 /* dddddddTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0C5E075019D002DB00D80B64 /* Build configuration list for PBXNativeTarget "dddddddTests" */;
-			buildPhases = (
-				0C5E073F19D002DB00D80B64 /* Sources */,
-				0C5E074019D002DB00D80B64 /* Frameworks */,
-				0C5E074119D002DB00D80B64 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0C5E074519D002DB00D80B64 /* PBXTargetDependency */,
-			);
-			name = dddddddTests;
-			productName = dddddddTests;
-			productReference = 0C5E074319D002DB00D80B64 /* dddddddTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -169,13 +147,9 @@
 					0C5E072919D002DB00D80B64 = {
 						CreatedOnToolsVersion = 6.0;
 					};
-					0C5E074219D002DB00D80B64 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 0C5E072919D002DB00D80B64;
-					};
 				};
 			};
-			buildConfigurationList = 0C5E072519D002DB00D80B64 /* Build configuration list for PBXProject "ddddddd" */;
+			buildConfigurationList = 0C5E072519D002DB00D80B64 /* Build configuration list for PBXProject "OWSDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,8 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C5E072919D002DB00D80B64 /* ddddddd */,
-				0C5E074219D002DB00D80B64 /* dddddddTests */,
+				0C5E072919D002DB00D80B64 /* OWSDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -201,14 +174,9 @@
 			files = (
 				0C5E073919D002DB00D80B64 /* Main.storyboard in Resources */,
 				0C5E073E19D002DB00D80B64 /* LaunchScreen.xib in Resources */,
+				0CEA509619D14A6A00705390 /* HomeViewController.xib in Resources */,
 				0C5E073B19D002DB00D80B64 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0C5E074119D002DB00D80B64 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0C5E0AA419D13B2000D80B64 /* OWS.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,29 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C5E073619D002DB00D80B64 /* ViewController.m in Sources */,
 				0C5E073319D002DB00D80B64 /* AppDelegate.m in Sources */,
 				0C5E073019D002DB00D80B64 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0C5E073F19D002DB00D80B64 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0C5E074A19D002DB00D80B64 /* dddddddTests.m in Sources */,
+				0CEA509519D14A6A00705390 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0C5E074519D002DB00D80B64 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0C5E072919D002DB00D80B64 /* ddddddd */;
-			targetProxy = 0C5E074419D002DB00D80B64 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0C5E073719D002DB00D80B64 /* Main.storyboard */ = {
@@ -250,6 +202,7 @@
 				0C5E073819D002DB00D80B64 /* Base */,
 			);
 			name = Main.storyboard;
+			path = OWSDemo;
 			sourceTree = "<group>";
 		};
 		0C5E073C19D002DB00D80B64 /* LaunchScreen.xib */ = {
@@ -343,9 +296,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ddddddd/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OWSDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ddddddd",
+					"$(PROJECT_DIR)/Debug-iphonesimulator",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = OWSDemo;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -353,50 +316,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ddddddd/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OWSDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		0C5E075119D002DB00D80B64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
+				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ddddddd",
+					"$(PROJECT_DIR)/Debug-iphonesimulator",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = dddddddTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ddddddd.app/ddddddd";
-			};
-			name = Debug;
-		};
-		0C5E075219D002DB00D80B64 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = dddddddTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ddddddd.app/ddddddd";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = OWSDemo;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C5E072519D002DB00D80B64 /* Build configuration list for PBXProject "ddddddd" */ = {
+		0C5E072519D002DB00D80B64 /* Build configuration list for PBXProject "OWSDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C5E074B19D002DB00D80B64 /* Debug */,
@@ -405,21 +343,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C5E074D19D002DB00D80B64 /* Build configuration list for PBXNativeTarget "ddddddd" */ = {
+		0C5E074D19D002DB00D80B64 /* Build configuration list for PBXNativeTarget "OWSDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C5E074E19D002DB00D80B64 /* Debug */,
 				0C5E074F19D002DB00D80B64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		0C5E075019D002DB00D80B64 /* Build configuration list for PBXNativeTarget "dddddddTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0C5E075119D002DB00D80B64 /* Debug */,
-				0C5E075219D002DB00D80B64 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
