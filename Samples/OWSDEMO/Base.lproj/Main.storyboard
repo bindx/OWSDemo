@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
@@ -46,12 +47,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="GjR-E9-aeH" secondAttribute="centerY" constant="151" id="9xW-Cb-uIT"/>
-                            <constraint firstAttribute="centerY" secondItem="G1A-k9-U1t" secondAttribute="centerY" constant="206" id="ENf-gJ-Qe7"/>
-                            <constraint firstAttribute="centerX" secondItem="G1A-k9-U1t" secondAttribute="centerX" constant="-7" id="IFK-kL-dcu"/>
-                            <constraint firstAttribute="centerX" secondItem="it8-Cp-gIU" secondAttribute="centerX" constant="-7.5" id="Ma8-xt-t4f"/>
-                            <constraint firstAttribute="centerX" secondItem="GjR-E9-aeH" secondAttribute="centerX" constant="-7" id="U5H-ro-LRR"/>
-                            <constraint firstAttribute="centerY" secondItem="it8-Cp-gIU" secondAttribute="centerY" constant="264" id="emj-Cn-YZ9"/>
+                            <constraint firstAttribute="centerX" secondItem="GjR-E9-aeH" secondAttribute="centerX" constant="-7" id="2Ie-hG-rHy"/>
+                            <constraint firstItem="GjR-E9-aeH" firstAttribute="top" secondItem="G1A-k9-U1t" secondAttribute="bottom" constant="25" id="69P-w0-xDg"/>
+                            <constraint firstAttribute="centerX" secondItem="it8-Cp-gIU" secondAttribute="centerX" constant="-7.5" id="QjE-TX-TZy"/>
+                            <constraint firstItem="G1A-k9-U1t" firstAttribute="top" secondItem="it8-Cp-gIU" secondAttribute="bottom" constant="28" id="hUF-Ek-n1c"/>
+                            <constraint firstItem="it8-Cp-gIU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="101" id="iSE-EX-B3V"/>
+                            <constraint firstAttribute="centerX" secondItem="G1A-k9-U1t" secondAttribute="centerX" constant="-7" id="okh-Ez-2ai"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -60,12 +61,12 @@
                                 <exclude reference="GjR-E9-aeH"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Ma8-xt-t4f"/>
-                                <exclude reference="emj-Cn-YZ9"/>
-                                <exclude reference="ENf-gJ-Qe7"/>
-                                <exclude reference="IFK-kL-dcu"/>
-                                <exclude reference="9xW-Cb-uIT"/>
-                                <exclude reference="U5H-ro-LRR"/>
+                                <exclude reference="QjE-TX-TZy"/>
+                                <exclude reference="iSE-EX-B3V"/>
+                                <exclude reference="hUF-Ek-n1c"/>
+                                <exclude reference="okh-Ez-2ai"/>
+                                <exclude reference="2Ie-hG-rHy"/>
+                                <exclude reference="69P-w0-xDg"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -75,12 +76,12 @@
                                 <include reference="GjR-E9-aeH"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Ma8-xt-t4f"/>
-                                <include reference="emj-Cn-YZ9"/>
-                                <include reference="ENf-gJ-Qe7"/>
-                                <include reference="IFK-kL-dcu"/>
-                                <include reference="9xW-Cb-uIT"/>
-                                <include reference="U5H-ro-LRR"/>
+                                <include reference="QjE-TX-TZy"/>
+                                <include reference="iSE-EX-B3V"/>
+                                <include reference="hUF-Ek-n1c"/>
+                                <include reference="okh-Ez-2ai"/>
+                                <include reference="2Ie-hG-rHy"/>
+                                <include reference="69P-w0-xDg"/>
                             </mask>
                         </variation>
                     </view>
