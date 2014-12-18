@@ -1,6 +1,6 @@
 # OWS iOS SDK 开发者文档
 
-##1.下载SDK压缩包
+##下载SDK压缩包
 #####（你下载的压缩包解压后包含了下面几个文件：）
 
 文件夹        | 详情
@@ -10,11 +10,20 @@ Lib          | 是SDK静态库包含libOWS.a静态库文件Bundle文件和头文
 Samples      | 是SDK的例子  
 
 
-####2.导入SDK文件
+####1.导入SDK文件
 
 积分墙头文件   | Bundle文件     | 静态库文件
 ------------ | ------------- | ------------
 OWSManger.h  | OWS.bundle    | libBindxOWS.a
+
+####2.导入Framework
+
+```
+StoreKit.framework
+AdSupport.framework
+SystemConfiguration.framework
+CoreLocation.framework
+```
 
 ####3.初始化SDK
 <p></p>

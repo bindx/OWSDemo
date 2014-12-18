@@ -27,8 +27,8 @@
 - (void)idfaShow{
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     pasteboard.string = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-    UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"IDFA(已复制到剪切板)" message:pasteboard.string delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-    [alert show];
+    UIAlertView * alertt = [[UIAlertView alloc]initWithTitle:@"IDFA(已复制到剪切板)" message:pasteboard.string delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alertt show];
 }
 
 /**
