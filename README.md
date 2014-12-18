@@ -41,23 +41,20 @@ SDK初始化 |
 ###调用积分墙广告
 
 ###### 1.使用积分墙
- <p></p>
+```
  #import “OWSManger.h" 
-<p>…</p>
-<p>…</p>
-<p>   [OWSManger showWall:YES didShowBlock:^{</p>
-<p>        NSLog(@"打开");</p>
-<p>    } didDismissBlock:^{</p>
-<p>        NSLog(@"关闭");</p>
-<p>    }];</p>
-<p>…</p>
-
+   [OWSManger showWall:YES didShowBlock:^{
+        NSLog(@"打开");
+    } didDismissBlock:^{
+        NSLog(@"关闭");
+    }];
+…
+```
 
 ###### 2.积分查询和使用
 <p></p>
-（使用积分） + (NSString *)rewardPoints;
-（查询积分）
-+ (BOOL)spendPoints:(NSString *)points;
+<p>（使用积分）+ (NSString *)rewardPoints;</p>
+<p>（查询积分）+ (BOOL)spendPoints:(NSString *)points;</p>
 
 **[OWSManger spendPoints:@“[integral]”]//integral消费积分数量，返回值BOOL值YES消费积分成功NO消费失败**
 
@@ -65,4 +62,8 @@ SDK初始化 |
 <p></p>
 1.获取广告标示符（IDFA-identifierForIdentifier）的方法NSString *adId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
 <p></p>
-###关注GitHub随时获取最新版SDK <https://github.com/bindx/OWSDemo.git>
+
+### And more?
+关注GitHub随时获取最新SDK <https://github.com/bindx/OWSDemo.git>
+
+Follow [@Bindx](https://github.com/bindx/OWSDemo.git) on GitHub for the latest update.
