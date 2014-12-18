@@ -1,4 +1,5 @@
 # OWS iOS SDK 开发者文档
+======================
 
 ##1.下载SDK压缩包
 #####（你下载的压缩包解压后包含了下面几个文件：）
@@ -43,12 +44,15 @@ SDK初始化 |
 ###### 1.使用积分墙
 ```
  #import “OWSManger.h" 
-   [OWSManger showWall:YES didShowBlock:^{
-        NSLog(@"打开");
+ ...
+- (IBAction)openWall:(id)sender {
+    [OWSManger showWall:YES didShowBlock:^{
+        NSLog(@"积分墙已打开");
     } didDismissBlock:^{
-        NSLog(@"关闭");
+        NSLog(@"积分墙已关闭");
     }];
-…
+}
+...
 ```
 
 ###### 2.积分查询和使用
