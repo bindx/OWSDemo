@@ -67,4 +67,4 @@ SDK初始化 |
 =============
 关注GitHub随时获取最新SDK <https://github.com/bindx/OWSDemo.git>
 
-Follow [@Bindx](https://github.com/bindx/OWSDemo.git) on GitHub for the latest update.
+Follow [@Bindx](https://github.com/bindx) on GitHub for the latest update.
