@@ -32,7 +32,9 @@ CoreLocation.framework
  #import "OWSManger.h"
 ```
 
-######2）在AppDelegate.m  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions方法中添加
+######2）在AppDelegate.m
+
+-(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions方法中添加
 
 SDK初始化 |  
 ------------ | ------------- 
