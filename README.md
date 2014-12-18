@@ -33,7 +33,7 @@ SDK初始化 |
 //以下为可选|
 [OWSManger setInternal:YES];//internalValue值为YES并且iOS系统>6.0 开启应用内打开AppStore|
 [OWSManger setGameID:@"owsuser"];//设置GameID|
-注：Your AppID为你自己得appid必须替换|
+**注：Your AppID为你自己的appid必须替换**|
 
 
 
