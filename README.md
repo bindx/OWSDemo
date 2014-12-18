@@ -3,23 +3,23 @@
 ##1.下载SDK压缩包
 #####（你下载的压缩包解压后包含了下面几个文件：）
 
-SDK |  
+文件夹        | 详情
 ------------ | ------------- 
-Document | 文件夹是SDK使用文档文件 
-Lib | 文件夹是SDK静态库包含libOWS.a静态库文件Bundle文件和头文件  
-Samples | 文件夹是SDK的例子  
+Document     | 是SDK使用文档文件 
+Lib          | 是SDK静态库包含libOWS.a静态库文件Bundle文件和头文件  
+Samples      | 是SDK的例子  
 
 
 ####2.导入SDK文件
 
-积分墙头文件 | Bundle文件 | 静态库文件
+积分墙头文件   | Bundle文件     | 静态库文件
 ------------ | ------------- | ------------
-OWSManger.h | OWS.bundle  | libBindxOWS.a
+OWSManger.h  | OWS.bundle    | libBindxOWS.a
 
 ####3.初始化SDK
 <p></p>
 ######1） 在AppDelegate.m文件中添加头文件
-SDK初始化 |  
+SDK初始化     |  
 ------------ | ------------- 
  #import "OWSManger.h"|
 
