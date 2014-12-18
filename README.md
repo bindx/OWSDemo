@@ -29,7 +29,7 @@ CoreLocation.framework
 <p></p>
 ######1） 在AppDelegate.m文件中添加头文件
 ```
- #import "OWSManger.h"|
+ #import "OWSManger.h"
 ```
 
 ######2）在AppDelegate.m  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions方法中添加
