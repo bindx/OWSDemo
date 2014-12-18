@@ -3,32 +3,39 @@
 ##1.下载SDK压缩包
 #####（你下载的压缩包解压后包含了下面几个文件：）
 
-######Document	文件夹是SDK使用文档
-<p></p>
-<p>Lib		    文件夹是SDK静态库包含libOWS.a静态库文件Bundle文件和头文件</p>
-<p>Samples	    文件夹是SDK的例子</p>
+SDK |  
+------------ | ------------- 
+Document | 文件夹是SDK使用文档文件 
+Lib | 文件夹是SDK静态库包含libOWS.a静态库文件Bundle文件和头文件  
+Samples | 文件夹是SDK的例子  
+
 
 ####2.导入SDK文件
-<p></p>
-<p>积分墙的头文件为</p>
-<p>OWSManger.h</p>
-<p>Bundle文件为</p>
-<p>OWS.bundle</p>
-<p>静态库文件为</p>
-<p>libBindxOWS.a</p>
+
+积分墙头文件 | Bundle文件 | 静态库文件
+------------ | ------------- | ------------
+OWSManger.h | OWS.bundle  | libBindxOWS.a
 
 ####3.初始化SDK
 <p></p>
 ######1） 在AppDelegate.m文件中添加头文件
- *#import "OWSManger.h"* 
+SDK初始化 |  
+------------ | ------------- 
+ #import "OWSManger.h"|
 
 
 ######2）在AppDelegate.m  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions方法中添加
-<p>[OWSManger setAdunitID:@"[Your AppID]”];</p>
-<p>//可选</p>
-<p>[OWSManger setInternal:YES];//internalValue值为YES并且iOS系统>6.0 开</p><p>启应用内打开AppStore</p>
-<p>[OWSManger setGameID:@"owsuser"];//设置GameID(可选)</p>
-<p>注：Your AppID为你自己得appid必须替换</p>
+
+SDK初始化 |  
+------------ | ------------- 
+[OWSManger setAdunitID:@"Your AppID”];|
+//以下为可选|
+[OWSManger setInternal:YES];//internalValue值为YES并且iOS系统>6.0 开启应用内打开AppStore|
+[OWSManger setGameID:@"owsuser"];//设置GameID|
+注：Your AppID为你自己得appid必须替换|
+
+
+
 
 
 ###调用积分墙广告
