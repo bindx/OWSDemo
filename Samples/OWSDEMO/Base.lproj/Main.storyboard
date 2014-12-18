@@ -44,6 +44,18 @@
                                     <action selector="usingIntegral:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XJw-Ez-xkw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Em6-aV-r4o">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="277" y="120" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="openWall:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AOS-Ae-QX3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -59,6 +71,7 @@
                                 <exclude reference="it8-Cp-gIU"/>
                                 <exclude reference="G1A-k9-U1t"/>
                                 <exclude reference="GjR-E9-aeH"/>
+                                <exclude reference="Em6-aV-r4o"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="QjE-TX-TZy"/>
@@ -67,6 +80,11 @@
                                 <exclude reference="okh-Ez-2ai"/>
                                 <exclude reference="2Ie-hG-rHy"/>
                                 <exclude reference="69P-w0-xDg"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="Em6-aV-r4o"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">

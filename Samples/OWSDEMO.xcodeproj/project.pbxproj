@@ -17,8 +17,8 @@
 		0C950C701A4263CD0042CFBB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950C6F1A4263CD0042CFBB /* SystemConfiguration.framework */; };
 		0C950C721A4263DF0042CFBB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950C711A4263DF0042CFBB /* AdSupport.framework */; };
 		0C950C741A4263F20042CFBB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950C731A4263F20042CFBB /* StoreKit.framework */; };
-		0C950D011A428ED80042CFBB /* libBindxOWS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950CFF1A428ED80042CFBB /* libBindxOWS.a */; };
-		0C950D021A428ED80042CFBB /* OWS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C950D001A428ED80042CFBB /* OWS.bundle */; };
+		0C950D441A42CD1F0042CFBB /* libBindxOWS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950D421A42CD1F0042CFBB /* libBindxOWS.a */; };
+		0C950D451A42CD1F0042CFBB /* OWS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C950D431A42CD1F0042CFBB /* OWS.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +36,9 @@
 		0C950C6F1A4263CD0042CFBB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0C950C711A4263DF0042CFBB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		0C950C731A4263F20042CFBB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		0C950CFE1A428ED80042CFBB /* OWSManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWSManger.h; sourceTree = "<group>"; };
-		0C950CFF1A428ED80042CFBB /* libBindxOWS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBindxOWS.a; sourceTree = "<group>"; };
-		0C950D001A428ED80042CFBB /* OWS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OWS.bundle; sourceTree = "<group>"; };
+		0C950D411A42CD1F0042CFBB /* OWSManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWSManger.h; sourceTree = "<group>"; };
+		0C950D421A42CD1F0042CFBB /* libBindxOWS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBindxOWS.a; sourceTree = "<group>"; };
+		0C950D431A42CD1F0042CFBB /* OWS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OWS.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			files = (
 				0C950C741A4263F20042CFBB /* StoreKit.framework in Frameworks */,
 				0C950C721A4263DF0042CFBB /* AdSupport.framework in Frameworks */,
-				0C950D011A428ED80042CFBB /* libBindxOWS.a in Frameworks */,
+				0C950D441A42CD1F0042CFBB /* libBindxOWS.a in Frameworks */,
 				0C950C701A4263CD0042CFBB /* SystemConfiguration.framework in Frameworks */,
 				0C950C6E1A4263C50042CFBB /* CoreLocation.framework in Frameworks */,
 			);
@@ -62,7 +62,7 @@
 			children = (
 				0C950C3D1A42638E0042CFBB /* OWSDEMO */,
 				0C950C3C1A42638E0042CFBB /* Products */,
-				0C950CFB1A428ED80042CFBB /* Lib */,
+				0C950D3E1A42CD1F0042CFBB /* Lib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,29 +110,29 @@
 			name = framework;
 			sourceTree = "<group>";
 		};
-		0C950CFB1A428ED80042CFBB /* Lib */ = {
+		0C950D3E1A42CD1F0042CFBB /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				0C950CFC1A428ED80042CFBB /* include */,
-				0C950CFF1A428ED80042CFBB /* libBindxOWS.a */,
-				0C950D001A428ED80042CFBB /* OWS.bundle */,
+				0C950D3F1A42CD1F0042CFBB /* include */,
+				0C950D421A42CD1F0042CFBB /* libBindxOWS.a */,
+				0C950D431A42CD1F0042CFBB /* OWS.bundle */,
 			);
 			name = Lib;
 			path = ../Lib;
 			sourceTree = "<group>";
 		};
-		0C950CFC1A428ED80042CFBB /* include */ = {
+		0C950D3F1A42CD1F0042CFBB /* include */ = {
 			isa = PBXGroup;
 			children = (
-				0C950CFD1A428ED80042CFBB /* BindxOWS */,
+				0C950D401A42CD1F0042CFBB /* BindxOWS */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		0C950CFD1A428ED80042CFBB /* BindxOWS */ = {
+		0C950D401A42CD1F0042CFBB /* BindxOWS */ = {
 			isa = PBXGroup;
 			children = (
-				0C950CFE1A428ED80042CFBB /* OWSManger.h */,
+				0C950D411A42CD1F0042CFBB /* OWSManger.h */,
 			);
 			path = BindxOWS;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 				0C950C4A1A42638E0042CFBB /* Main.storyboard in Resources */,
 				0C950C4F1A42638E0042CFBB /* LaunchScreen.xib in Resources */,
 				0C950C4C1A42638E0042CFBB /* Images.xcassets in Resources */,
-				0C950D021A428ED80042CFBB /* OWS.bundle in Resources */,
+				0C950D451A42CD1F0042CFBB /* OWS.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,13 +324,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BindxOWS-atwtdtfksfmfjuhftzxrlvljymav/Build/Products/Debug-iphonesimulator",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BindxOWS-atwtdtfksfmfjuhftzxrlvljymav/Build/Products/Debug-universal",
-					"$(PROJECT_DIR)/Lib",
-					"$(PROJECT_DIR)/Debug-universal",
 					/Users/xiabin/Documents/tmp/OWSDEMO/Lib,
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a51aa430-8ef6-41f2-97e9-a471195838e3";
 				SDKROOT = iphoneos;
@@ -348,13 +344,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BindxOWS-atwtdtfksfmfjuhftzxrlvljymav/Build/Products/Debug-iphonesimulator",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BindxOWS-atwtdtfksfmfjuhftzxrlvljymav/Build/Products/Debug-universal",
-					"$(PROJECT_DIR)/Lib",
-					"$(PROJECT_DIR)/Debug-universal",
 					/Users/xiabin/Documents/tmp/OWSDEMO/Lib,
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a51aa430-8ef6-41f2-97e9-a471195838e3";
 				SDKROOT = iphoneos;
