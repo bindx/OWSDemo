@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="it8-Cp-gIU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="打开积分墙">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openWall:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fXl-Ya-dyF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1A-k9-U1t">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="查询积分">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="queryIntegral:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eLS-Qx-7XS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjR-E9-aeH">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="使用积分">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="usingIntegral:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XJw-Ez-xkw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="GjR-E9-aeH" secondAttribute="centerY" constant="151" id="9xW-Cb-uIT"/>
+                            <constraint firstAttribute="centerY" secondItem="G1A-k9-U1t" secondAttribute="centerY" constant="206" id="ENf-gJ-Qe7"/>
+                            <constraint firstAttribute="centerX" secondItem="G1A-k9-U1t" secondAttribute="centerX" constant="-7" id="IFK-kL-dcu"/>
+                            <constraint firstAttribute="centerX" secondItem="it8-Cp-gIU" secondAttribute="centerX" constant="-7.5" id="Ma8-xt-t4f"/>
+                            <constraint firstAttribute="centerX" secondItem="GjR-E9-aeH" secondAttribute="centerX" constant="-7" id="U5H-ro-LRR"/>
+                            <constraint firstAttribute="centerY" secondItem="it8-Cp-gIU" secondAttribute="centerY" constant="264" id="emj-Cn-YZ9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="it8-Cp-gIU"/>
+                                <exclude reference="G1A-k9-U1t"/>
+                                <exclude reference="GjR-E9-aeH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Ma8-xt-t4f"/>
+                                <exclude reference="emj-Cn-YZ9"/>
+                                <exclude reference="ENf-gJ-Qe7"/>
+                                <exclude reference="IFK-kL-dcu"/>
+                                <exclude reference="9xW-Cb-uIT"/>
+                                <exclude reference="U5H-ro-LRR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="it8-Cp-gIU"/>
+                                <include reference="G1A-k9-U1t"/>
+                                <include reference="GjR-E9-aeH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Ma8-xt-t4f"/>
+                                <include reference="emj-Cn-YZ9"/>
+                                <include reference="ENf-gJ-Qe7"/>
+                                <include reference="IFK-kL-dcu"/>
+                                <include reference="9xW-Cb-uIT"/>
+                                <include reference="U5H-ro-LRR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

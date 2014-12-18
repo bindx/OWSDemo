@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C950C411A42638E0042CFBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C950C401A42638E0042CFBB /* main.m */; };
+		0C950C441A42638E0042CFBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C950C431A42638E0042CFBB /* AppDelegate.m */; };
+		0C950C471A42638E0042CFBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C950C461A42638E0042CFBB /* ViewController.m */; };
+		0C950C4A1A42638E0042CFBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C950C481A42638E0042CFBB /* Main.storyboard */; };
+		0C950C4C1A42638E0042CFBB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C950C4B1A42638E0042CFBB /* Images.xcassets */; };
+		0C950C4F1A42638E0042CFBB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C950C4D1A42638E0042CFBB /* LaunchScreen.xib */; };
+		0C950C6E1A4263C50042CFBB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950C6D1A4263C50042CFBB /* CoreLocation.framework */; };
+		0C950C701A4263CD0042CFBB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950C6F1A4263CD0042CFBB /* SystemConfiguration.framework */; };
+		0C950C721A4263DF0042CFBB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950C711A4263DF0042CFBB /* AdSupport.framework */; };
+		0C950C741A4263F20042CFBB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950C731A4263F20042CFBB /* StoreKit.framework */; };
+		0C950C821A4271000042CFBB /* libBindxOWS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950C811A4271000042CFBB /* libBindxOWS.a */; };
+		0C950C841A4271750042CFBB /* OWS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C950C831A4271750042CFBB /* OWS.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C950C3B1A42638E0042CFBB /* OWSDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWSDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C950C3F1A42638E0042CFBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C950C401A42638E0042CFBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C950C421A42638E0042CFBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C950C431A42638E0042CFBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C950C451A42638E0042CFBB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0C950C461A42638E0042CFBB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0C950C491A42638E0042CFBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C950C4B1A42638E0042CFBB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0C950C4E1A42638E0042CFBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0C950C6D1A4263C50042CFBB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0C950C6F1A4263CD0042CFBB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0C950C711A4263DF0042CFBB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		0C950C731A4263F20042CFBB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0C950C801A4271000042CFBB /* OWSManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWSManger.h; sourceTree = "<group>"; };
+		0C950C811A4271000042CFBB /* libBindxOWS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBindxOWS.a; sourceTree = "<group>"; };
+		0C950C831A4271750042CFBB /* OWS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OWS.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C950C381A42638E0042CFBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C950C741A4263F20042CFBB /* StoreKit.framework in Frameworks */,
+				0C950C721A4263DF0042CFBB /* AdSupport.framework in Frameworks */,
+				0C950C821A4271000042CFBB /* libBindxOWS.a in Frameworks */,
+				0C950C701A4263CD0042CFBB /* SystemConfiguration.framework in Frameworks */,
+				0C950C6E1A4263C50042CFBB /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C950C321A42638E0042CFBB = {
+			isa = PBXGroup;
+			children = (
+				0C950C3D1A42638E0042CFBB /* OWSDEMO */,
+				0C950C3C1A42638E0042CFBB /* Products */,
+				0C950C7D1A4271000042CFBB /* Lib */,
+			);
+			sourceTree = "<group>";
+		};
+		0C950C3C1A42638E0042CFBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C950C3B1A42638E0042CFBB /* OWSDEMO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C950C3D1A42638E0042CFBB /* OWSDEMO */ = {
+			isa = PBXGroup;
+			children = (
+				0C950C6C1A4263B50042CFBB /* framework */,
+				0C950C421A42638E0042CFBB /* AppDelegate.h */,
+				0C950C431A42638E0042CFBB /* AppDelegate.m */,
+				0C950C451A42638E0042CFBB /* ViewController.h */,
+				0C950C461A42638E0042CFBB /* ViewController.m */,
+				0C950C481A42638E0042CFBB /* Main.storyboard */,
+				0C950C4B1A42638E0042CFBB /* Images.xcassets */,
+				0C950C4D1A42638E0042CFBB /* LaunchScreen.xib */,
+				0C950C3E1A42638E0042CFBB /* Supporting Files */,
+			);
+			path = OWSDEMO;
+			sourceTree = "<group>";
+		};
+		0C950C3E1A42638E0042CFBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C950C3F1A42638E0042CFBB /* Info.plist */,
+				0C950C401A42638E0042CFBB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C950C6C1A4263B50042CFBB /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				0C950C731A4263F20042CFBB /* StoreKit.framework */,
+				0C950C711A4263DF0042CFBB /* AdSupport.framework */,
+				0C950C6F1A4263CD0042CFBB /* SystemConfiguration.framework */,
+				0C950C6D1A4263C50042CFBB /* CoreLocation.framework */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		0C950C7D1A4271000042CFBB /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				0C950C7E1A4271000042CFBB /* include */,
+				0C950C811A4271000042CFBB /* libBindxOWS.a */,
+				0C950C831A4271750042CFBB /* OWS.bundle */,
+			);
+			name = Lib;
+			path = ../Lib;
+			sourceTree = "<group>";
+		};
+		0C950C7E1A4271000042CFBB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0C950C7F1A4271000042CFBB /* BindxOWS */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0C950C7F1A4271000042CFBB /* BindxOWS */ = {
+			isa = PBXGroup;
+			children = (
+				0C950C801A4271000042CFBB /* OWSManger.h */,
+			);
+			path = BindxOWS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C950C3A1A42638E0042CFBB /* OWSDEMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C950C5E1A42638E0042CFBB /* Build configuration list for PBXNativeTarget "OWSDEMO" */;
+			buildPhases = (
+				0C950C371A42638E0042CFBB /* Sources */,
+				0C950C381A42638E0042CFBB /* Frameworks */,
+				0C950C391A42638E0042CFBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OWSDEMO;
+			productName = OWSDEMO;
+			productReference = 0C950C3B1A42638E0042CFBB /* OWSDEMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C950C331A42638E0042CFBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Bindx;
+				TargetAttributes = {
+					0C950C3A1A42638E0042CFBB = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 0C950C361A42638E0042CFBB /* Build configuration list for PBXProject "OWSDEMO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C950C321A42638E0042CFBB;
+			productRefGroup = 0C950C3C1A42638E0042CFBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C950C3A1A42638E0042CFBB /* OWSDEMO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C950C391A42638E0042CFBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C950C4A1A42638E0042CFBB /* Main.storyboard in Resources */,
+				0C950C4F1A42638E0042CFBB /* LaunchScreen.xib in Resources */,
+				0C950C4C1A42638E0042CFBB /* Images.xcassets in Resources */,
+				0C950C841A4271750042CFBB /* OWS.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C950C371A42638E0042CFBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C950C471A42638E0042CFBB /* ViewController.m in Sources */,
+				0C950C441A42638E0042CFBB /* AppDelegate.m in Sources */,
+				0C950C411A42638E0042CFBB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0C950C481A42638E0042CFBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C950C491A42638E0042CFBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C950C4D1A42638E0042CFBB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C950C4E1A42638E0042CFBB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C950C5C1A42638E0042CFBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0C950C5D1A42638E0042CFBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C950C5F1A42638E0042CFBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OWSDEMO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BindxOWS-atwtdtfksfmfjuhftzxrlvljymav/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BindxOWS-atwtdtfksfmfjuhftzxrlvljymav/Build/Products/Debug-universal",
+					"$(PROJECT_DIR)/Lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0C950C601A42638E0042CFBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OWSDEMO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BindxOWS-atwtdtfksfmfjuhftzxrlvljymav/Build/Products/Debug-iphonesimulator",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BindxOWS-atwtdtfksfmfjuhftzxrlvljymav/Build/Products/Debug-universal",
+					"$(PROJECT_DIR)/Lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C950C361A42638E0042CFBB /* Build configuration list for PBXProject "OWSDEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C950C5C1A42638E0042CFBB /* Debug */,
+				0C950C5D1A42638E0042CFBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C950C5E1A42638E0042CFBB /* Build configuration list for PBXNativeTarget "OWSDEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C950C5F1A42638E0042CFBB /* Debug */,
+				0C950C601A42638E0042CFBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C950C331A42638E0042CFBB /* Project object */;
+}
