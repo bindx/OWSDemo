@@ -53,8 +53,8 @@ SDK初始化 |
 
 ###### 2.积分查询和使用
 <p></p>
-<p>（使用积分）+ (NSString *)rewardPoints;</p>
-<p>（查询积分）+ (BOOL)spendPoints:(NSString *)points;</p>
+* （使用积分）+ (NSString *)rewardPoints;
+* （查询积分）+ (BOOL)spendPoints:(NSString *)points;
 
 **[OWSManger spendPoints:@“[integral]”]//integral消费积分数量，返回值BOOL值YES消费积分成功NO消费失败**
 
@@ -64,6 +64,7 @@ SDK初始化 |
 <p></p>
 
 ### And more?
+=============
 关注GitHub随时获取最新SDK <https://github.com/bindx/OWSDemo.git>
 
 Follow [@Bindx](https://github.com/bindx/OWSDemo.git) on GitHub for the latest update.
