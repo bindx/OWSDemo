@@ -25,8 +25,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT (example)"
   s.author             = { "bindx" => "email@address.com" }
   s.source       = { :git => "https://github.com/bindx/OWSDemo.git", :tag => "1.0" }
-  s.source_files  = "OWSManger", "/Lib/include/BindxOWS/.{h}"
-  s.vendored_libraries = "Lib/{a,bundle}"
+  s.source_files  = "Lib", "/Lib/.*"
 
   #  s.exclude_files = "Classes/Exclude"
 
