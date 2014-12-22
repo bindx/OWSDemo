@@ -14,7 +14,7 @@
     UIAlertView *alert;
 }
 
-@end
+@endsummary
 
 @implementation ViewController
 

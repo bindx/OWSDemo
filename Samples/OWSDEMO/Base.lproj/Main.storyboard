@@ -46,25 +46,46 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Em6-aV-r4o">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="打开积分墙">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="277" y="120" width="46" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="openWall:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AOS-Ae-QX3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ks-gg-Dhc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="查询积分">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="queryIntegral:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oFY-75-8jV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPD-ow-AIU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="消费积分">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="usingIntegral:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zum-Gv-U1f"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="GjR-E9-aeH" secondAttribute="centerX" constant="-7" id="2Ie-hG-rHy"/>
+                            <constraint firstItem="5ks-gg-Dhc" firstAttribute="top" secondItem="Em6-aV-r4o" secondAttribute="bottom" constant="30" id="4Za-0K-94X"/>
                             <constraint firstItem="GjR-E9-aeH" firstAttribute="top" secondItem="G1A-k9-U1t" secondAttribute="bottom" constant="25" id="69P-w0-xDg"/>
                             <constraint firstAttribute="centerX" secondItem="it8-Cp-gIU" secondAttribute="centerX" constant="-7.5" id="QjE-TX-TZy"/>
                             <constraint firstItem="G1A-k9-U1t" firstAttribute="top" secondItem="it8-Cp-gIU" secondAttribute="bottom" constant="28" id="hUF-Ek-n1c"/>
                             <constraint firstItem="it8-Cp-gIU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="101" id="iSE-EX-B3V"/>
+                            <constraint firstAttribute="centerX" secondItem="pPD-ow-AIU" secondAttribute="centerX" constant="-14" id="kr9-2y-a3M"/>
                             <constraint firstAttribute="centerX" secondItem="G1A-k9-U1t" secondAttribute="centerX" constant="-7" id="okh-Ez-2ai"/>
+                            <constraint firstItem="pPD-ow-AIU" firstAttribute="top" secondItem="5ks-gg-Dhc" secondAttribute="bottom" constant="26" id="pVp-v8-7fl"/>
+                            <constraint firstAttribute="centerX" secondItem="5ks-gg-Dhc" secondAttribute="centerX" constant="-14" id="rST-wr-1bc"/>
+                            <constraint firstItem="Em6-aV-r4o" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="s0a-QT-ezg"/>
+                            <constraint firstAttribute="centerX" secondItem="Em6-aV-r4o" secondAttribute="centerX" constant="-14.5" id="spf-6E-qQE"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -72,19 +93,37 @@
                                 <exclude reference="G1A-k9-U1t"/>
                                 <exclude reference="GjR-E9-aeH"/>
                                 <exclude reference="Em6-aV-r4o"/>
+                                <exclude reference="5ks-gg-Dhc"/>
+                                <exclude reference="pPD-ow-AIU"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="QjE-TX-TZy"/>
-                                <exclude reference="iSE-EX-B3V"/>
                                 <exclude reference="hUF-Ek-n1c"/>
                                 <exclude reference="okh-Ez-2ai"/>
                                 <exclude reference="2Ie-hG-rHy"/>
                                 <exclude reference="69P-w0-xDg"/>
+                                <exclude reference="QjE-TX-TZy"/>
+                                <exclude reference="iSE-EX-B3V"/>
+                                <exclude reference="s0a-QT-ezg"/>
+                                <exclude reference="spf-6E-qQE"/>
+                                <exclude reference="4Za-0K-94X"/>
+                                <exclude reference="rST-wr-1bc"/>
+                                <exclude reference="kr9-2y-a3M"/>
+                                <exclude reference="pVp-v8-7fl"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="subviews">
                                 <include reference="Em6-aV-r4o"/>
+                                <include reference="5ks-gg-Dhc"/>
+                                <include reference="pPD-ow-AIU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="s0a-QT-ezg"/>
+                                <include reference="spf-6E-qQE"/>
+                                <include reference="4Za-0K-94X"/>
+                                <include reference="rST-wr-1bc"/>
+                                <include reference="kr9-2y-a3M"/>
+                                <include reference="pVp-v8-7fl"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -94,12 +133,12 @@
                                 <include reference="GjR-E9-aeH"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="QjE-TX-TZy"/>
-                                <include reference="iSE-EX-B3V"/>
                                 <include reference="hUF-Ek-n1c"/>
                                 <include reference="okh-Ez-2ai"/>
                                 <include reference="2Ie-hG-rHy"/>
                                 <include reference="69P-w0-xDg"/>
+                                <include reference="QjE-TX-TZy"/>
+                                <include reference="iSE-EX-B3V"/>
                             </mask>
                         </variation>
                     </view>
