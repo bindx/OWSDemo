@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C5E8F831A493DF100D80AFF /* OWS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C5E8F821A493DF100D80AFF /* OWS.bundle */; };
 		0C950C411A42638E0042CFBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C950C401A42638E0042CFBB /* main.m */; };
 		0C950C441A42638E0042CFBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C950C431A42638E0042CFBB /* AppDelegate.m */; };
 		0C950C471A42638E0042CFBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C950C461A42638E0042CFBB /* ViewController.m */; };
@@ -18,10 +19,12 @@
 		0C950C721A4263DF0042CFBB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950C711A4263DF0042CFBB /* AdSupport.framework */; };
 		0C950C741A4263F20042CFBB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950C731A4263F20042CFBB /* StoreKit.framework */; };
 		0C950D441A42CD1F0042CFBB /* libBindxOWS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950D421A42CD1F0042CFBB /* libBindxOWS.a */; };
-		0C950D451A42CD1F0042CFBB /* OWS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C950D431A42CD1F0042CFBB /* OWS.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C5E8F801A493DD500D80AFF /* OWSConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWSConfig.h; sourceTree = "<group>"; };
+		0C5E8F811A493DD500D80AFF /* OWSSpot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWSSpot.h; sourceTree = "<group>"; };
+		0C5E8F821A493DF100D80AFF /* OWS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OWS.bundle; sourceTree = "<group>"; };
 		0C950C3B1A42638E0042CFBB /* OWSDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWSDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C950C3F1A42638E0042CFBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C950C401A42638E0042CFBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,7 +41,6 @@
 		0C950C731A4263F20042CFBB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		0C950D411A42CD1F0042CFBB /* OWSManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWSManger.h; sourceTree = "<group>"; };
 		0C950D421A42CD1F0042CFBB /* libBindxOWS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBindxOWS.a; sourceTree = "<group>"; };
-		0C950D431A42CD1F0042CFBB /* OWS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OWS.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				0C950D3F1A42CD1F0042CFBB /* include */,
+				0C5E8F821A493DF100D80AFF /* OWS.bundle */,
 				0C950D421A42CD1F0042CFBB /* libBindxOWS.a */,
-				0C950D431A42CD1F0042CFBB /* OWS.bundle */,
 			);
 			name = Lib;
 			path = ../Lib;
@@ -132,6 +134,8 @@
 		0C950D401A42CD1F0042CFBB /* BindxOWS */ = {
 			isa = PBXGroup;
 			children = (
+				0C5E8F801A493DD500D80AFF /* OWSConfig.h */,
+				0C5E8F811A493DD500D80AFF /* OWSSpot.h */,
 				0C950D411A42CD1F0042CFBB /* OWSManger.h */,
 			);
 			path = BindxOWS;
@@ -197,7 +201,7 @@
 				0C950C4A1A42638E0042CFBB /* Main.storyboard in Resources */,
 				0C950C4F1A42638E0042CFBB /* LaunchScreen.xib in Resources */,
 				0C950C4C1A42638E0042CFBB /* Images.xcassets in Resources */,
-				0C950D451A42CD1F0042CFBB /* OWS.bundle in Resources */,
+				0C5E8F831A493DF100D80AFF /* OWS.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

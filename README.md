@@ -15,6 +15,8 @@ Samples      | 是SDK的例子
 积分墙头文件   | Bundle文件     | 静态库文件
 ------------ | ------------- | ------------
 OWSManger.h  | OWS.bundle    | libBindxOWS.a
+OWSConfig.h  |
+OWSSpot.h    |
 
 ####2.导入Framework
 
@@ -70,6 +72,21 @@ SDK初始化 |
 * （查询积分）+ (BOOL)spendPoints:(NSString *)points;
 
 **[OWSManger spendPoints:@“[integral]”]//integral消费积分数量，返回值BOOL值YES消费积分成功NO消费失败**
+
+
+###调用插屏广告
+###### 1.使用插屏广告
+```
+- (IBAction)podst:(id)sender {
+    [OWSSpot requstSpotAdWithSucceed:^(BOOL isSucceed, NSError *error) {
+        if(isSucceed){
+            [OWSSpot showSpotWithCompleteBlock:^(BOOL isSucceed, NSError *error) {
+            }];
+        }
+    }];
+}
+```
+
 
 ####OWS SDK 常见问题解答
 <p></p>

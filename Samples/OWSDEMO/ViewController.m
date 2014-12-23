@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <AdSupport/ASIdentifierManager.h>
 #import "OWSManger.h"
+#import "OWSSpot.h"
 
 @interface ViewController ()<UIAlertViewDelegate>{
     UIAlertView *alert;
@@ -27,8 +28,7 @@
 - (void)idfaShow{
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     pasteboard.string = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-    UIAlertView * alertt = [[UIAlertView alloc]initWithTitle:@"IDFA(已复制到剪切板)" message:pasteboard.string delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-    [alertt show];
+    [self showAlertWithTitle:@"IDFA(已复制到剪切板)" Message:pasteboard.string AlertViewStyle:UIAlertViewStyleDefault delegate:nil cancelBtn:nil];
 }
 
 /**
@@ -46,21 +46,30 @@
  查询积分
  */
 - (IBAction)queryIntegral:(id)sender {
-    NSString * str = [NSString stringWithFormat:@"当前积分为:%@",[OWSManger rewardPoints]];
-    alert = [[UIAlertView alloc]initWithTitle:@"积分查询" message:str delegate:nil cancelButtonTitle:@"calcel" otherButtonTitles:@"ok", nil];
-    [alert show];
+    NSString * message = [NSString stringWithFormat:@"当前积分为:%@",[OWSManger rewardPoints]];
+    [self showAlertWithTitle:@"查询积分" Message:message AlertViewStyle:UIAlertViewStyleDefault delegate:nil cancelBtn:nil];
 }
 
 /**
  使用积分
  */
 - (IBAction)usingIntegral:(id)sender {
-    alert = [[UIAlertView alloc]initWithTitle:@"请输入使用的积分数" message:nil delegate:self cancelButtonTitle:@"calcel" otherButtonTitles:@"ok", nil];
-    [alert setAlertViewStyle:UIAlertViewStylePlainTextInput];
-    [[alert textFieldAtIndex:0] setKeyboardType:UIKeyboardTypeNumberPad];
-    [alert show];
+    [self showAlertWithTitle:@"请输入使用的积分数" Message:nil AlertViewStyle:UIAlertViewStylePlainTextInput delegate:self cancelBtn:@"cancel"];
 }
 
+
+- (void)showAlertWithTitle:(NSString *)title Message:(NSString *)message AlertViewStyle:(UIAlertViewStyle)style delegate:(id)delegate cancelBtn:(NSString *)cancelBtnTitle{
+    
+    alert = [[UIAlertView alloc]initWithTitle:title message:message delegate:delegate cancelButtonTitle:cancelBtnTitle otherButtonTitles:@"ok", nil];
+    if (style) {
+        [alert setAlertViewStyle:style];
+        [[alert textFieldAtIndex:0] setKeyboardType:UIKeyboardTypeNumberPad];
+    }
+    [alert show];
+    
+    //    alert = [[UIAlertView alloc]initWithTitle:title message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    //    [alert show];
+}
 
 #pragma mark - UIAlertView delegate
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
@@ -71,10 +80,27 @@
     }
 }
 
+- (IBAction)podst:(id)sender {
+    [OWSSpot requstSpotAdWithSucceed:^(BOOL isSucceed, NSError *error) {
+        if(isSucceed){
+            [OWSSpot showSpotWithCompleteBlock:^(BOOL isSucceed, NSError *error) {
+            }];
+        }
+    }];
+}
 
-- (void)didReceiveMemoryWarning {
+//- (IBAction)setMTKEY:(id)sender {
+//    
+//}
+//
+//- (IBAction)okClick:(id)sender {
+//    NSLog(@"%@",self.mzkey.text);
+//    [OWSManger setAdunitID:self.mzkey.text];
+//}
+
+
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
