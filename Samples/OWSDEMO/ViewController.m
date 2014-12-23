@@ -84,6 +84,7 @@
     [OWSSpot requstSpotAdWithSucceed:^(BOOL isSucceed, NSError *error) {
         if(isSucceed){
             [OWSSpot showSpotWithCompleteBlock:^(BOOL isSucceed, NSError *error) {
+                
             }];
         }
     }];

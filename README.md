@@ -15,8 +15,8 @@ Samples      | 是SDK的例子
 积分墙头文件   | Bundle文件     | 静态库文件
 ------------ | ------------- | ------------
 OWSManger.h  | OWS.bundle    | libBindxOWS.a
-OWSConfig.h  |
-OWSSpot.h    |
+OWSConfig.h  |\		  		  |\
+OWSSpot.h    |\		  		  |\
 
 ####2.导入Framework
 
@@ -95,6 +95,8 @@ SDK初始化 |
 
 ### And more?
 =============
+
+
 关注GitHub随时获取最新SDK <https://github.com/bindx/OWSDemo.git>
 
 Follow [@Bindx](https://github.com/bindx) on GitHub for the latest update.
