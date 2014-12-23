@@ -5,7 +5,7 @@
 
 文件夹        | 详情
 ------------ | ------------- 
-Document     | 是SDK使用文档文件 
+README.md    | 是SDK使用文档文件 
 Lib          | 是SDK静态库包含libOWS.a静态库文件Bundle文件和头文件  
 Samples      | 是SDK的例子  
 
