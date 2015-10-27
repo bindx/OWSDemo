@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZCa-8F-rLY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZCa-8F-rLY">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -12,6 +12,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="D2W-Zr-Ssj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="QaQ-wS-MAS"/>
@@ -35,6 +36,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="it8-Cp-gIU">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
                                 <state key="normal" title="打开积分墙">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -42,26 +44,9 @@
                                     <action selector="openWall:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fXl-Ya-dyF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1A-k9-U1t">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="查询积分">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="queryIntegral:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eLS-Qx-7XS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjR-E9-aeH">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="使用积分">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="usingIntegral:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XJw-Ez-xkw"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag6-XQ-AjQ">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
                                 <state key="normal" title="显示插屏广告">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -71,6 +56,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Em6-aV-r4o">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
                                 <state key="normal" title="打开积分墙">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -80,6 +66,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ks-gg-Dhc">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
                                 <state key="normal" title="查询积分">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -89,6 +76,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPD-ow-AIU">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
                                 <state key="normal" title="消费积分">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -98,6 +86,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqo-UM-e1Y">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
                                 <state key="normal" title="显示插屏广告">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -106,23 +95,22 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dqo-UM-e1Y" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="255" id="0Ax-Ni-N8c">
                                 <variation key="heightClass=compact" constant="213"/>
                             </constraint>
                             <constraint firstItem="5ks-gg-Dhc" firstAttribute="top" secondItem="Em6-aV-r4o" secondAttribute="bottom" constant="30" id="4Za-0K-94X"/>
-                            <constraint firstItem="GjR-E9-aeH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="170" id="AaS-8N-OJY"/>
                             <constraint firstAttribute="centerX" secondItem="it8-Cp-gIU" secondAttribute="centerX" constant="-7.5" id="Fc8-UP-sRx"/>
-                            <constraint firstAttribute="centerX" secondItem="G1A-k9-U1t" secondAttribute="centerX" constant="-7" id="GbW-iI-6WX"/>
                             <constraint firstItem="it8-Cp-gIU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="57" id="TCQ-D7-DaB"/>
-                            <constraint firstItem="Ag6-XQ-AjQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="221" id="eUx-gA-njc"/>
+                            <constraint firstItem="Ag6-XQ-AjQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="221" id="eUx-gA-njc">
+                                <variation key="heightClass=regular-widthClass=compact" constant="116"/>
+                            </constraint>
                             <constraint firstAttribute="centerX" secondItem="Ag6-XQ-AjQ" secondAttribute="centerX" constant="-7" id="gjl-H6-RrB"/>
                             <constraint firstAttribute="centerX" secondItem="dqo-UM-e1Y" secondAttribute="centerX" constant="-14" id="k2U-zW-SYN"/>
                             <constraint firstAttribute="centerX" secondItem="pPD-ow-AIU" secondAttribute="centerX" constant="-14" id="kr9-2y-a3M"/>
-                            <constraint firstItem="G1A-k9-U1t" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="115" id="nrO-rD-sHm"/>
                             <constraint firstItem="pPD-ow-AIU" firstAttribute="top" secondItem="5ks-gg-Dhc" secondAttribute="bottom" constant="26" id="pVp-v8-7fl"/>
-                            <constraint firstAttribute="centerX" secondItem="GjR-E9-aeH" secondAttribute="centerX" constant="-7" id="pkp-XH-tkq"/>
                             <constraint firstAttribute="centerX" secondItem="5ks-gg-Dhc" secondAttribute="centerX" constant="-14" id="rST-wr-1bc"/>
                             <constraint firstItem="Em6-aV-r4o" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="s0a-QT-ezg">
                                 <variation key="heightClass=compact" constant="38"/>
@@ -132,8 +120,6 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="it8-Cp-gIU"/>
-                                <exclude reference="G1A-k9-U1t"/>
-                                <exclude reference="GjR-E9-aeH"/>
                                 <exclude reference="Ag6-XQ-AjQ"/>
                                 <exclude reference="Em6-aV-r4o"/>
                                 <exclude reference="5ks-gg-Dhc"/>
@@ -141,22 +127,18 @@
                                 <exclude reference="dqo-UM-e1Y"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="eUx-gA-njc"/>
-                                <exclude reference="gjl-H6-RrB"/>
-                                <exclude reference="GbW-iI-6WX"/>
-                                <exclude reference="nrO-rD-sHm"/>
-                                <exclude reference="AaS-8N-OJY"/>
-                                <exclude reference="pkp-XH-tkq"/>
-                                <exclude reference="Fc8-UP-sRx"/>
-                                <exclude reference="TCQ-D7-DaB"/>
-                                <exclude reference="s0a-QT-ezg"/>
-                                <exclude reference="spf-6E-qQE"/>
                                 <exclude reference="4Za-0K-94X"/>
                                 <exclude reference="rST-wr-1bc"/>
-                                <exclude reference="kr9-2y-a3M"/>
-                                <exclude reference="pVp-v8-7fl"/>
+                                <exclude reference="eUx-gA-njc"/>
+                                <exclude reference="gjl-H6-RrB"/>
+                                <exclude reference="s0a-QT-ezg"/>
+                                <exclude reference="spf-6E-qQE"/>
                                 <exclude reference="0Ax-Ni-N8c"/>
                                 <exclude reference="k2U-zW-SYN"/>
+                                <exclude reference="Fc8-UP-sRx"/>
+                                <exclude reference="TCQ-D7-DaB"/>
+                                <exclude reference="kr9-2y-a3M"/>
+                                <exclude reference="pVp-v8-7fl"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -167,30 +149,24 @@
                                 <include reference="dqo-UM-e1Y"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="s0a-QT-ezg"/>
-                                <include reference="spf-6E-qQE"/>
                                 <include reference="4Za-0K-94X"/>
                                 <include reference="rST-wr-1bc"/>
-                                <include reference="kr9-2y-a3M"/>
-                                <include reference="pVp-v8-7fl"/>
+                                <include reference="s0a-QT-ezg"/>
+                                <include reference="spf-6E-qQE"/>
                                 <include reference="0Ax-Ni-N8c"/>
                                 <include reference="k2U-zW-SYN"/>
+                                <include reference="kr9-2y-a3M"/>
+                                <include reference="pVp-v8-7fl"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="it8-Cp-gIU"/>
-                                <include reference="G1A-k9-U1t"/>
-                                <include reference="GjR-E9-aeH"/>
                                 <include reference="Ag6-XQ-AjQ"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="eUx-gA-njc"/>
                                 <include reference="gjl-H6-RrB"/>
-                                <include reference="GbW-iI-6WX"/>
-                                <include reference="nrO-rD-sHm"/>
-                                <include reference="AaS-8N-OJY"/>
-                                <include reference="pkp-XH-tkq"/>
                                 <include reference="Fc8-UP-sRx"/>
                                 <include reference="TCQ-D7-DaB"/>
                             </mask>
@@ -200,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="528" y="358.5"/>
+            <point key="canvasLocation" x="531" y="359"/>
         </scene>
     </scenes>
 </document>

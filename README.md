@@ -1,4 +1,4 @@
-# OWS iOS SDK 开发者文档
+# Coffat iOS SDK 开发者文档
 
 ##下载SDK压缩包
 #####（你下载的压缩包解压后包含了下面几个文件：）
@@ -6,17 +6,16 @@
 文件夹        | 详情
 ------------ | ------------- 
 README.md    | 是SDK使用文档文件 
-Lib          | 是SDK静态库包含libOWS.a静态库文件Bundle文件和头文件  
-Samples      | 是SDK的例子  
-
+CoffatAdv.framework    | 是SDK库文件
+Samples      | 是SDK的Demo
 
 ####1.导入SDK文件
 
-积分墙头文件   | Bundle文件     | 静态库文件
------------- | ------------- | ------------
-OWSManger.h  | OWS.bundle    | libBindxOWS.a
-OWSConfig.h  |\		  		  |\
-OWSSpot.h    |\		  		  |\
+积分墙头文件   | SDK文件
+------------ | ------------
+OWSManger.h  | CoffatAdv.framework
+OWSConfig.h  |	  		  \
+OWSSpot.h    |		  		  \
 
 ####2.导入Framework
 
@@ -29,7 +28,7 @@ CoreLocation.framework
 
 ####3.初始化SDK
 <p></p>
-######1） 在AppDelegate.m文件中添加头文件
+######1）在AppDelegate.m文件中添加头文件
 ```
  #import "OWSManger.h"
 ```
@@ -40,15 +39,12 @@ CoreLocation.framework
 
 SDK初始化 |  
 ------------ | ------------- 
-[OWSManger setAdunitID:@"Your AppID”];|
+[OWSManger setAdunitID:@"这里填写你的Adu" AndEncryption:@"这里填写你的Key"];|
+[OWSManger setCallBackUrl:@"这里填写你的服务器回调地址"];|
 //以下为可选|
 [OWSManger setInternal:YES];//internalValue值为YES并且iOS系统>6.0 开启应用内打开AppStore|
-[OWSManger setGameID:@"owsuser"];//设置GameID|
-**注：Your AppID为你自己的appid必须替换**|
-
-
-
-
+[OWSManger setGameID:@"gameId"];//设置GameID|
+**注：Adu和Key必须填写**|
 
 ###调用积分墙广告
 
@@ -68,10 +64,22 @@ SDK初始化 |
 
 ###### 2.积分查询和使用
 <p></p>
-* （使用积分）+ (NSString *)rewardPoints;
-* （查询积分）+ (BOOL)spendPoints:(NSString *)points;
+* （查询积分）+ (void)queryintegralWithBlock:(void(^)(NSString *points)) block;
 
-**[OWSManger spendPoints:@“[integral]”]//integral消费积分数量，返回值BOOL值YES消费积分成功NO消费失败**
+```
+    [OWSManger queryintegralWithBlock:^(NSString *points) {
+		NSLog(@"当前积分为:%@",points);
+```
+
+* （使用积分）+ (void)spendPoints:(NSString *)points WithBlock:(void(^)(BOOL bl))block;
+
+```
+	[OWSManger spendPoints:[[alertView textFieldAtIndex:0]text] WithBlock:^(BOOL bl) {
+		NSString *str =bl?@"消费成功":@"积分不足消费失败";
+		NSLog(@"%@",str);            
+	}];
+```
+
 
 
 ###调用插屏广告

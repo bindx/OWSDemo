@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C5E8F831A493DF100D80AFF /* OWS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C5E8F821A493DF100D80AFF /* OWS.bundle */; };
 		0C950C411A42638E0042CFBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C950C401A42638E0042CFBB /* main.m */; };
 		0C950C441A42638E0042CFBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C950C431A42638E0042CFBB /* AppDelegate.m */; };
 		0C950C471A42638E0042CFBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C950C461A42638E0042CFBB /* ViewController.m */; };
@@ -18,13 +17,10 @@
 		0C950C701A4263CD0042CFBB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950C6F1A4263CD0042CFBB /* SystemConfiguration.framework */; };
 		0C950C721A4263DF0042CFBB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950C711A4263DF0042CFBB /* AdSupport.framework */; };
 		0C950C741A4263F20042CFBB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950C731A4263F20042CFBB /* StoreKit.framework */; };
-		0C950D441A42CD1F0042CFBB /* libBindxOWS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C950D421A42CD1F0042CFBB /* libBindxOWS.a */; };
+		C4D557401BDF554E00E5E092 /* CoffatAdv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D5573F1BDF554E00E5E092 /* CoffatAdv.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C5E8F801A493DD500D80AFF /* OWSConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWSConfig.h; sourceTree = "<group>"; };
-		0C5E8F811A493DD500D80AFF /* OWSSpot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWSSpot.h; sourceTree = "<group>"; };
-		0C5E8F821A493DF100D80AFF /* OWS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OWS.bundle; sourceTree = "<group>"; };
 		0C950C3B1A42638E0042CFBB /* OWSDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWSDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C950C3F1A42638E0042CFBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C950C401A42638E0042CFBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,8 +35,7 @@
 		0C950C6F1A4263CD0042CFBB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0C950C711A4263DF0042CFBB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		0C950C731A4263F20042CFBB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		0C950D411A42CD1F0042CFBB /* OWSManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWSManger.h; sourceTree = "<group>"; };
-		0C950D421A42CD1F0042CFBB /* libBindxOWS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBindxOWS.a; sourceTree = "<group>"; };
+		C4D5573F1BDF554E00E5E092 /* CoffatAdv.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoffatAdv.framework; path = ../Samples/OWSDEMO/CoffatAdv.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,8 +44,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C950C741A4263F20042CFBB /* StoreKit.framework in Frameworks */,
+				C4D557401BDF554E00E5E092 /* CoffatAdv.framework in Frameworks */,
 				0C950C721A4263DF0042CFBB /* AdSupport.framework in Frameworks */,
-				0C950D441A42CD1F0042CFBB /* libBindxOWS.a in Frameworks */,
 				0C950C701A4263CD0042CFBB /* SystemConfiguration.framework in Frameworks */,
 				0C950C6E1A4263C50042CFBB /* CoreLocation.framework in Frameworks */,
 			);
@@ -115,30 +110,10 @@
 		0C950D3E1A42CD1F0042CFBB /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				0C950D3F1A42CD1F0042CFBB /* include */,
-				0C5E8F821A493DF100D80AFF /* OWS.bundle */,
-				0C950D421A42CD1F0042CFBB /* libBindxOWS.a */,
+				C4D5573F1BDF554E00E5E092 /* CoffatAdv.framework */,
 			);
 			name = Lib;
 			path = ../Lib;
-			sourceTree = "<group>";
-		};
-		0C950D3F1A42CD1F0042CFBB /* include */ = {
-			isa = PBXGroup;
-			children = (
-				0C950D401A42CD1F0042CFBB /* BindxOWS */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		0C950D401A42CD1F0042CFBB /* BindxOWS */ = {
-			isa = PBXGroup;
-			children = (
-				0C5E8F801A493DD500D80AFF /* OWSConfig.h */,
-				0C5E8F811A493DD500D80AFF /* OWSSpot.h */,
-				0C950D411A42CD1F0042CFBB /* OWSManger.h */,
-			);
-			path = BindxOWS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,11 +142,12 @@
 		0C950C331A42638E0042CFBB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Bindx;
 				TargetAttributes = {
 					0C950C3A1A42638E0042CFBB = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = GD5UZZBSNR;
 					};
 				};
 			};
@@ -201,7 +177,6 @@
 				0C950C4A1A42638E0042CFBB /* Main.storyboard in Resources */,
 				0C950C4F1A42638E0042CFBB /* LaunchScreen.xib in Resources */,
 				0C950C4C1A42638E0042CFBB /* Images.xcassets in Resources */,
-				0C5E8F831A493DF100D80AFF /* OWS.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +235,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -274,7 +250,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "a51aa430-8ef6-41f2-97e9-a471195838e3";
@@ -310,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "a51aa430-8ef6-41f2-97e9-a471195838e3";
 				SDKROOT = iphoneos;
@@ -321,18 +297,22 @@
 		0C950C5F1A42638E0042CFBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = OWSDEMO/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/xiabin/Documents/tmp/OWSDEMO/Lib,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OWSDEMO",
 				);
+				INFOPLIST_FILE = OWSDEMO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pre.app11111111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a51aa430-8ef6-41f2-97e9-a471195838e3";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7s armv7 arm64";
 			};
@@ -341,18 +321,22 @@
 		0C950C601A42638E0042CFBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = OWSDEMO/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/xiabin/Documents/tmp/OWSDEMO/Lib,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OWSDEMO",
 				);
+				INFOPLIST_FILE = OWSDEMO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pre.app11111111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a51aa430-8ef6-41f2-97e9-a471195838e3";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7s armv7 arm64";
 			};

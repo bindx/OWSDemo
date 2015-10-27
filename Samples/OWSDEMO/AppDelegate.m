@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "OWSManger.h"
+#import <CoffatAdv/OWSManger.h>
 
 
 @interface AppDelegate ()
@@ -19,7 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [OWSManger setAdunitID:@"sNCNCCCCCCCLHQWCCC"];
+#warning Adu和Key必须替换成自己的
+    [OWSManger setAdunitID:@"F178B79C3CD04E8E9208D7C063B52854" AndKey:@"079C0BAB69704C5999ECB5F7602EE766"];
+    [OWSManger setCallBackUrl:@"http://www.baidu.com"];
+#warning Adu和Key必须替换成自己的
     return YES;
 }
 
