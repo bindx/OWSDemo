@@ -62,25 +62,6 @@ SDK初始化 |
 ...
 ```
 
-###### 2.积分查询和使用
-<p></p>
-* （查询积分）+ (void)queryintegralWithBlock:(void(^)(NSString *points)) block;
-
-```
-    [OWSManger queryintegralWithBlock:^(NSString *points) {
-		NSLog(@"当前积分为:%@",points);
-```
-
-* （使用积分）+ (void)spendPoints:(NSString *)points WithBlock:(void(^)(BOOL bl))block;
-
-```
-	[OWSManger spendPoints:[[alertView textFieldAtIndex:0]text] WithBlock:^(BOOL bl) {
-		NSString *str =bl?@"消费成功":@"积分不足消费失败";
-		NSLog(@"%@",str);            
-	}];
-```
-
-
 
 ###调用插屏广告
 ###### 1.使用插屏广告
